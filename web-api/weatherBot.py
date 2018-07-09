@@ -25,10 +25,10 @@ def tweet_Update():
     
     # time taken
     localtime = datetime.datetime.now()
-    message = "Weather Update from Cape Coast "+str(localtime) +" :\n"+"The Temp is: " + str(temp['temp']) + " and The Humidity is: " + str(w.get_humidity())
+    message = "Weather Update from Cape Coast "+str(localtime) +" :\n"+"The Temp is: " + str(temp['temp']) + " and The Humidity is: " + str(w.get_humidity())  
     
     #weather message to update twitter
-    api.update_status(message)
+    api.update_status(message.encode("utf-8"))
 
 # updates twitter every hour 
 while True:
