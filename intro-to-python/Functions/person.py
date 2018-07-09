@@ -10,4 +10,4 @@ def get_name():
 userAge =  get_age()
 userName = get_name()
 
-print("Your name is " + userName +" and you are " + str(userAge)+ " old") 
+print("Your name is {} and you are {} old".format(userName,userAge)) 
