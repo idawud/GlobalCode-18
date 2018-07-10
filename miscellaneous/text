@@ -1,0 +1,9 @@
+git push --force --set-upstream origin dawud
+
+git status
+
+*********************************************
+*   Public-private keys                     *
+*********************************************
+
+dawud@raspberrypi:~ $ ssh-keygen -t rsa
